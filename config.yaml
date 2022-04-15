@@ -1,14 +1,22 @@
-baseurl: https://example.com
+baseurl: https://limecats0331.github.io
 languageCode: en-us
 theme: hugo-theme-stack
 paginate: 5
 title: limecats Blog
+enableRobotsTXT: true
+
+#sitemap
+sitemap:
+  changefreq: weekly
+  filename: sitemap.xml
+  priority: 0.5
+
 
 # Change it to your Disqus shortname before using
 disqusShortname: hugo-theme-stack
 
 # GA Tracking ID
-googleAnalytics:
+googleAnalytics: G-YSQ9JXW8S5
 
 # Theme i18n support
 # Available values: en, fr, id, ja, ko, pt-br, zh-cn, zh-tw, es, de, nl, it, th, el, uk, ar
@@ -64,7 +72,6 @@ params:
             adminLabel:
 
         utterances:
-            repo:
             issueTerm: pathname
             label: 
 

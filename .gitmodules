@@ -1,0 +1,4 @@
+[submodule "public"]
+	path = public
+	url = git@github.com:limecats0331/limecats0331.github.io.git
+	branch = master
