@@ -2,6 +2,7 @@
 title: "Next Permutation"
 description: "다음 순열 알고리즘이란?"
 date: 2022-08-13
+update: 2022-08-13
 tags:
   - Algorithm
 ---
