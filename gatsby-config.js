@@ -48,7 +48,7 @@ module.exports = {
         name: title,
         short_name: title,
         decription: description,
-        start_url: `/`,
+        start_url: `/blog`,
         background_color: `#ffffff`,
         theme_color: `#ced4da`,
         display: `standalone`,
