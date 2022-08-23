@@ -141,7 +141,12 @@ module.exports = {
       },
     },
     `gatsby-plugin-resolve-src`,
-    `gatsby-plugin-sitemap`,
+    {
+      resolve : `gatsby-plugin-sitemap`,
+      option : {
+        resolveSiteUrl : () => siteUrl,
+      },
+    },
     {
       resolve: `gatsby-plugin-feed`,
       options: {
