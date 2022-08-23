@@ -4,8 +4,9 @@ description: "공주님의 정원 풀이 및 풀면서 느낌점"
 date: 2022-08-13
 update: 2022-08-13
 tags:
-  - Algorithm
+  - Baekjoon
   - Greedy
+series : "Algorithm"
 ---
 
 # 2457번 공주님의 정원

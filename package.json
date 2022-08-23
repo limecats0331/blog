@@ -62,7 +62,7 @@
   "license": "MIT",
   "main": "n/a",
   "scripts": {
-    "deploy":"gatsby build && gh-pages -d public",
+    "deploy":"gatsby build --prefix-paths && gh-pages -d public",
     "create": "gatsby-post-gen",
     "build": "gatsby build",
     "develop": "gatsby develop --prefix-paths&& gh-pages -d public",

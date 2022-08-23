@@ -11,7 +11,25 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-catch-links`,
-    `gatsby-plugin-robots-txt`,
+    {
+      resolve : `gatsby-plugin-robots-txt`,
+      options : {
+        host : `https://limecats0331.github.io/blog`,
+        sitemap : `https://limecats0331.github.io/blog/sitemap.xml`,
+        policy: [{
+          userAgent: `*`,
+          allow: `/`,
+        }],
+      },
+    },
+    {
+      resolve : `gatsby-plugin-google-gtag`,
+      options:{
+        trackingIds : [
+          `G-YSQ9JXW8S5`,
+        ],
+      },
+    },
     {
       resolve: `gatsby-plugin-react-redux`,
       options: {
