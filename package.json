@@ -11,6 +11,7 @@
     "gatsby-plugin-catch-links": "^3.5.0",
     "gatsby-plugin-feed": "^2.7.0",
     "gatsby-plugin-google-fonts": "^1.0.1",
+    "gatsby-plugin-google-gtag": "^4.21.0",
     "gatsby-plugin-manifest": "^2.5.2",
     "gatsby-plugin-offline": "^3.3.3",
     "gatsby-plugin-react-helmet": "^4.5.0",
@@ -43,15 +44,14 @@
     "react-scroll": "^1.8.1",
     "react-spring": "^8.0.27",
     "redux": "^4.1.0",
-    "sharp": "^0.23.0",
+    "sharp": "^0.30.7",
     "styled-components": "^5.2.1",
     "styled-reset": "^4.3.1",
     "utterances-react-component": "^1.0.0"
   },
   "devDependencies": {
     "eslint-config-react-app": "^6.0.0",
-    "gatsby-post-gen": "^1.0.0",
-    "gh-pages": "^3.2.3",
+    "gh-pages": "^3.1.0",
     "prettier": "2.1.2"
   },
   "keywords": [
@@ -62,10 +62,8 @@
   "license": "MIT",
   "main": "n/a",
   "scripts": {
-    "deploy":"gatsby build --prefix-paths && gh-pages -d public",
-    "create": "gatsby-post-gen",
-    "build": "gatsby build",
-    "develop": "gatsby develop --prefix-paths&& gh-pages -d public",
+    "build": "gatsby build --prefix-paths && gh-pages -d public",
+    "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
