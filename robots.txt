@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://limecats0331.github.io/blog/sitemap.xml
+Host: https://limecats0331.github.io
