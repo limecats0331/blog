@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of limecats]]></title><description><![CDATA[내 생각을 정리해보자]]></description><link>https://limecats0331.github.io/blog</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 30 Aug 2022 09:34:07 GMT</lastBuildDate><item><title><![CDATA[StringFormat]]></title><description><![CDATA[…]]></description><link>https://limecats0331.github.io/blog/StringFormat/</link><guid isPermaLink="false">https://limecats0331.github.io/blog/StringFormat/</guid><pubDate>Mon, 22 Aug 2022 00:00:00 GMT</pubDate><content:encoded>&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;https://www.acmicpc.net/problem/20299
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of limecats]]></title><description><![CDATA[내 생각을 정리해보자]]></description><link>https://limecats0331.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 30 Aug 2022 11:00:48 GMT</lastBuildDate><item><title><![CDATA[StringFormat]]></title><description><![CDATA[…]]></description><link>https://limecats0331.github.io/StringFormat/</link><guid isPermaLink="false">https://limecats0331.github.io/StringFormat/</guid><pubDate>Mon, 22 Aug 2022 00:00:00 GMT</pubDate><content:encoded>&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;https://www.acmicpc.net/problem/20299
 string format 방식을 사용하면 시간초과가 나는데 왜 나고 무슨 차이가 있을까?&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h2&gt;문제 인식&lt;/h2&gt;
 &lt;p&gt;해당 문제를 푸는데 &lt;code class=&quot;language-text&quot;&gt;String Fomat&lt;/code&gt; 방식을 사용해서 풀었더니 시간 초과가 발생했다.
@@ -23,7 +23,7 @@ string format 방식을 사용하면 시간초과가 나는데 왜 나고 무슨
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;StringFormat&lt;/code&gt; 내부에서 정규식을 사용해서 삽입할 위치를 찾아주고 해당 위치에 넣는 작업을 따로 수행하기 때문이였다.&lt;/p&gt;
 &lt;h2&gt;결론&lt;/h2&gt;
 &lt;p&gt;찾아보니 서버에서 로그 출력시 짧은 시간에 많은 로그를 출력할 때 문제가 발생하기도 한다고 한다.
-출력이 많이 필요한 경우에는 사용을 자제하고 코테에서는 &lt;code class=&quot;language-text&quot;&gt;StringBuilder&lt;/code&gt;를 쓰거나 내부적으로는 똑같다고 하니 그냥 &lt;code class=&quot;language-text&quot;&gt;+&lt;/code&gt;를 사용해야될 것 같다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[LIS]]></title><description><![CDATA[LIS…]]></description><link>https://limecats0331.github.io/blog/LIS/</link><guid isPermaLink="false">https://limecats0331.github.io/blog/LIS/</guid><pubDate>Tue, 16 Aug 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;LIS(최장 증가 부분 순열)&lt;/h1&gt;
+출력이 많이 필요한 경우에는 사용을 자제하고 코테에서는 &lt;code class=&quot;language-text&quot;&gt;StringBuilder&lt;/code&gt;를 쓰거나 내부적으로는 똑같다고 하니 그냥 &lt;code class=&quot;language-text&quot;&gt;+&lt;/code&gt;를 사용해야될 것 같다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[LIS]]></title><description><![CDATA[LIS…]]></description><link>https://limecats0331.github.io/LIS/</link><guid isPermaLink="false">https://limecats0331.github.io/LIS/</guid><pubDate>Tue, 16 Aug 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;LIS(최장 증가 부분 순열)&lt;/h1&gt;
 &lt;h2&gt;개념&lt;/h2&gt;
 &lt;p&gt;어떠한 순열이 주어졌을 때, 그 수열에서 순서를 바꾸지 않고 일부 원소를 뽑아서 새로 만든 수열을 &lt;code class=&quot;language-text&quot;&gt;부분 수열&lt;/code&gt;이라고 한다.
 이 수열이 오름차순으로 되어 있으면 &lt;code class=&quot;language-text&quot;&gt;증가 부분 수열&lt;/code&gt;이 되는 것이다.
@@ -637,7 +637,7 @@ string format 방식을 사용하면 시간초과가 나는데 왜 나고 무슨
 &lt;p&gt;만약 레퍼런스의 블로그를 찾지 못했다면 아직도 검색하고 있었을 것이다...&lt;/p&gt;
 &lt;p&gt;내가 글을 잘 쓰는 편은 아니지만 나 나름대로 최대한 이해하기 쉽게 풀어쓰려고 노력했고, 처음 봤던 블로그의 주소도 남겨뒀으니 비슷하게 이해가 안되는 사람들에게 도움이 되었으면 좋겠다.&lt;/p&gt;
 &lt;h2&gt;Reference&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://loosie.tistory.com/376&quot;&gt;[알고리즘] 가장 긴 증가하는 부분 수열 LIS - DP &amp;#x26; 이진탐색 (Java)&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[백준 2457번 공주님의 정원]]></title><description><![CDATA[245…]]></description><link>https://limecats0331.github.io/blog/baekjoon_2457/</link><guid isPermaLink="false">https://limecats0331.github.io/blog/baekjoon_2457/</guid><pubDate>Sat, 13 Aug 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;2457번 공주님의 정원&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://loosie.tistory.com/376&quot;&gt;[알고리즘] 가장 긴 증가하는 부분 수열 LIS - DP &amp;#x26; 이진탐색 (Java)&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[백준 2457번 공주님의 정원]]></title><description><![CDATA[245…]]></description><link>https://limecats0331.github.io/baekjoon_2457/</link><guid isPermaLink="false">https://limecats0331.github.io/baekjoon_2457/</guid><pubDate>Sat, 13 Aug 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;2457번 공주님의 정원&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.acmicpc.net/problem/2457&quot;&gt;백준 링크&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;문제 요약&lt;/h2&gt;
 &lt;p&gt;그리디 알고리즘을 사용해서 꽃의 최소의 갯수를 구하는 문제이다.&lt;/p&gt;
@@ -735,7 +735,7 @@ string format 방식을 사용하면 시간초과가 나는데 왜 나고 무슨
 &lt;ol&gt;
 &lt;li&gt;시간(월, 일)을 비교할 때는 숫자형식으로 비교하는 것이 더 편하다.&lt;/li&gt;
 &lt;li&gt;어떤 객체를 비교하는 경우 클래스로 따로 빼서 만들어서 비교하면 코드 가독성이 더 좋아진다.&lt;/li&gt;
-&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[백준 1912번 연속합]]></title><description><![CDATA[문제링크 문제 요약 크기가 1…]]></description><link>https://limecats0331.github.io/blog/baekjoon_1912/</link><guid isPermaLink="false">https://limecats0331.github.io/blog/baekjoon_1912/</guid><pubDate>Sat, 13 Aug 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;https://www.acmicpc.net/problem/1912&quot;&gt;문제링크&lt;/a&gt;&lt;/p&gt;
+&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[백준 1912번 연속합]]></title><description><![CDATA[문제링크 문제 요약 크기가 1…]]></description><link>https://limecats0331.github.io/baekjoon_1912/</link><guid isPermaLink="false">https://limecats0331.github.io/baekjoon_1912/</guid><pubDate>Sat, 13 Aug 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;https://www.acmicpc.net/problem/1912&quot;&gt;문제링크&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;문제 요약&lt;/h2&gt;
 &lt;p&gt;크기가 10만개 이하인 정수로 이루어진 수열이 주어질 때, 연속된 숫자들의 합 중에 가장 큰 수를 구하는 문제&lt;/p&gt;
 &lt;h2&gt;풀이 과정&lt;/h2&gt;
@@ -853,7 +853,7 @@ string format 방식을 사용하면 시간초과가 나는데 왜 나고 무슨
     &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h2&gt;배운 점&lt;/h2&gt;
-&lt;p&gt;앞까지 구한 것이 손해라면 새로 시작한다는 개념 생각할 수 있게 되어서 좋았다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Next Permutation]]></title><description><![CDATA[Next Permutation…]]></description><link>https://limecats0331.github.io/blog/Next_permutation/</link><guid isPermaLink="false">https://limecats0331.github.io/blog/Next_permutation/</guid><pubDate>Sat, 13 Aug 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Next Permutation&lt;/h1&gt;
+&lt;p&gt;앞까지 구한 것이 손해라면 새로 시작한다는 개념 생각할 수 있게 되어서 좋았다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Next Permutation]]></title><description><![CDATA[Next Permutation…]]></description><link>https://limecats0331.github.io/Next_permutation/</link><guid isPermaLink="false">https://limecats0331.github.io/Next_permutation/</guid><pubDate>Sat, 13 Aug 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Next Permutation&lt;/h1&gt;
 &lt;h2&gt;사전 설명&lt;/h2&gt;
 &lt;p&gt;사전 순서로 다음 순열을 뽑는 알고리즘이다.
 이를 이용해서 다음 순열이 없을 때까지 뽑으면서 순열을 뽑을 수 있는데 재귀를 사용하는 것보다 적은 호출로 순열을 뽑아 낼 수 있다.&lt;/p&gt;
