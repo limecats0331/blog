@@ -3,6 +3,7 @@ const { title, description, author, siteUrl } = blogConfig
 
 module.exports = {
   pathPrefix: "/blog",
+  //assetPrefix : `https://limecats0331.github.io/blog`, 
   siteMetadata: {
     title,
     description,
@@ -10,6 +11,11 @@ module.exports = {
     siteUrl,
   },
   plugins: [
+//    {
+//      resolve :`gatsby-plugin-advanced-sitemap`, 
+//      createLinkInHead : true,
+ //     output : "https://limecats0331.github.io/blog/sitemap.xml",
+//    },
     `gatsby-plugin-catch-links`,
     {
       resolve : `gatsby-plugin-robots-txt`,
@@ -144,7 +150,8 @@ module.exports = {
     {
       resolve : `gatsby-plugin-sitemap`,
       option : {
-        resolveSiteUrl : () => siteUrl,
+        createLinkInHead : true,
+        output : `/sitemap.xml`,
       },
     },
     {
